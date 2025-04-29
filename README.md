@@ -16,10 +16,6 @@ Filter by Book and Chapter.
 
 Sort by Word or Frequency.
 
-100% frontend — no backend or database required.
-
-Lightweight and easy to run locally.
-
 🗂️ Project Structure
 ```
 2025_BIBLESTUDYTOOL/
