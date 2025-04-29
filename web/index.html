@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Frequencies in Bible Books</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .filters { margin-bottom: 15px; }
+        .filters label { margin-right: 10px; }
+        table { width: 100%; }
+    </style>
+</head>
+<body>
+
+    <h1>Word Frequencies in Bible Books</h1>
+
+    <div class="filters">
+        <label for="bookFilter">Filter by Book:</label>
+        <select id="bookFilter">
+            <option value="">All Books</option>
+        </select>
+
+        <label for="chapterFilter" style="margin-left: 20px;">Filter by Chapter:</label>
+        <select id="chapterFilter">
+            <option value="">All Chapters</option>
+        </select>
+    </div>
+
+    <table id="wordTable" class="display">
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Chapter</th>
+                <th>Word</th>
+                <th>Frequency</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
