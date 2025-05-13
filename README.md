@@ -1,9 +1,9 @@
 # 2025_BibleStudyTool
-A simple Bible word analysis and study tool that extracts unique words from the books of Galatians, Ephesians, Philippians, Colossians, and Philemon (NLT Version) and visualizes the results through an interactive, filterable website.
+A simple Bible word analysis and study tool that extracts unique words from the books of Galatians, Ephesians, Philippians, Colossians, and Philemon and visualizes the results through an interactive, filterable website.
 
 This project was built to explore word frequency patterns across these epistles, with options to filter results by book and chapter.
 
-✨ Features
+## Features
 Parses Bible text into structured JSON format.
 
 Extracts unique words with stopword removal.
@@ -16,7 +16,7 @@ Filter by Book and Chapter.
 
 Sort by Word or Frequency.
 
-🗂️ Project Structure
+## Project Structure
 ```
 2025_BIBLESTUDYTOOL/
 │
