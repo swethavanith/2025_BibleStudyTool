@@ -6,8 +6,8 @@ from collections import defaultdict
 with open('data/raw/bible_raw.txt', 'r') as file:
     lines = file.readlines()
 
-# Data structure: book -> chapter -> list of verses
-bible_data = defaultdict(lambda: defaultdict(list))
+# Data structure: book -> chapter -> verse -> verse text
+bible_data = defaultdict(lambda: defaultdict(dict))
 
 current_book = None
 current_chapter = None
@@ -29,10 +29,11 @@ for line in lines:
     if verse_match and current_book and current_chapter:
         verse_number = verse_match.group(1)
         verse_text = verse_match.group(2)
-        bible_data[current_book][current_chapter].append(verse_text)
+        # Store verse with reference
+        bible_data[current_book][current_chapter][verse_number] = verse_text
 
 # Convert defaultdict to regular dict for saving
-bible_data = {book: dict(chapters) for book, chapters in bible_data.items()}
+bible_data = {book: {chapter: verses for chapter, verses in chapters.items()} for book, chapters in bible_data.items()}
 
 # Save to JSON file
 with open('data/processed/bible_data.json', 'w', encoding='utf-8') as outfile:
