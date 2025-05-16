@@ -115,6 +115,11 @@ $(document).ready(function() {
                 $('#displayContainer').html(htmlContent);
             });
 
+            // Remove highlight when interacting with pagination or search
+            $('#wordTable').on('page.dt search.dt', function() {
+                $('#wordTable tbody tr').removeClass('selected');
+            });
+
         }
     });
 });
