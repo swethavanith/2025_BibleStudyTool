@@ -1,0 +1,7 @@
+data/processed
+data/raw
+data/processed/
+data/processed/bible_data.json
+data/raw/
+*.json
+*.csv
