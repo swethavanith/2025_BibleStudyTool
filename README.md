@@ -25,7 +25,7 @@ Sort by Word or Frequency.
 │   │   └── bible_raw.txt                 # Raw Bible text (excluded from GitHub)
 │   ├── processed/
 │   │   ├── bible_data.json                # Parsed structured Bible data
-│   │   └── word_frequencies_by_book_chapter.csv  # Word frequency data
+│   │   └── word_references.csv            # Word frequency data
 │   └── scripts/
 │       ├── convert_to_json.py             # Converts raw text to structured JSON
 │       └── main.py                        # Generates the word frequency CSV
